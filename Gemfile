@@ -10,6 +10,8 @@ gem 'spring', :group => :development
 gem 'sqlite3'
 
 gem 'devise_token_auth'
+gem 'cancancan', '~> 1.10'
+
 gem 'money-rails'
 
 group :development, :test do

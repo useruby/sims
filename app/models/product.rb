@@ -12,4 +12,6 @@ class Product < ActiveRecord::Base
   validates :description, length: {maximum: 1024}
 
   validates :quantity, numericality: {greater_than_or_equal_to: 0}
+
+  belongs_to :created_by, class_name: User
 end
