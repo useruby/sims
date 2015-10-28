@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151028131740) do
+ActiveRecord::Schema.define(version: 20151028163120) do
+
+  create_table "products", force: :cascade do |t|
+    t.string   "sku",                                         null: false
+    t.string   "name",           limit: 250,                  null: false
+    t.string   "description",    limit: 1024
+    t.integer  "price_cents",                 default: 0,     null: false
+    t.string   "price_currency",              default: "USD", null: false
+    t.integer  "quantity",                    default: 0
+    t.datetime "created_at",                                  null: false
+    t.datetime "updated_at",                                  null: false
+  end
+
+  add_index "products", ["sku"], name: "index_products_on_sku"
 
   create_table "users", force: :cascade do |t|
     t.string   "provider",               default: "email", null: false
@@ -27,8 +40,8 @@ ActiveRecord::Schema.define(version: 20151028131740) do
     t.string   "last_sign_in_ip"
     t.string   "email"
     t.text     "tokens"
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email"
