@@ -7,11 +7,18 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
 gem 'sqlite3'
+
+gem 'devise_token_auth'
 
 group :development, :test do
     gem 'rspec-rails', '~> 3.0'
+    gem 'rspec_api_documentation'
+
+    gem 'database_cleaner'
+
+    gem 'faker'
+
     gem 'pry-rails'
 end
 
