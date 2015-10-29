@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 20151028184029) do
     t.string   "last_sign_in_ip"
     t.string   "email"
     t.text     "tokens"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
     t.boolean  "admin",                  default: false
   end
 
