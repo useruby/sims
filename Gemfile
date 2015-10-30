@@ -27,6 +27,8 @@ group :development, :test do
   gem 'faker'
 
   gem 'pry-rails'
+
+  gem 'rubocop', require: false
 end
 
 # To use ActiveModel has_secure_password
