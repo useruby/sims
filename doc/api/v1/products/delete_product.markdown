@@ -1,4 +1,4 @@
-# Product API
+# Products API
 
 ## Delete product
 
@@ -13,11 +13,11 @@ Description : product id
 
 #### Headers
 
-<pre>Access-Token: tzGeOJbiW3O0TMkgpo83Yw
+<pre>Access-Token: XvwoHWkIa1S3v1NAawLLog
 Token-Type: Bearer
-Client: 51zrMbTJcwxSFPmscazGEw
-Expiry: 1447413586
-Uid: tod_gibson@mraz.name
+Client: O7p0fhgQKzuWF76Psp1UEA
+Expiry: 1447429726
+Uid: adele_maggio@grady.name
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
@@ -29,11 +29,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -d &#39;&#39; -X DELETE \
-	-H &quot;Access-Token: tzGeOJbiW3O0TMkgpo83Yw&quot; \
+	-H &quot;Access-Token: XvwoHWkIa1S3v1NAawLLog&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: 51zrMbTJcwxSFPmscazGEw&quot; \
-	-H &quot;Expiry: 1447413586&quot; \
-	-H &quot;Uid: tod_gibson@mraz.name&quot; \
+	-H &quot;Client: O7p0fhgQKzuWF76Psp1UEA&quot; \
+	-H &quot;Expiry: 1447429726&quot; \
+	-H &quot;Uid: adele_maggio@grady.name&quot; \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -43,16 +43,16 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: tzGeOJbiW3O0TMkgpo83Yw
+access-token: XvwoHWkIa1S3v1NAawLLog
 token-type: Bearer
-client: 51zrMbTJcwxSFPmscazGEw
-expiry: 1447413586
-uid: tod_gibson@mraz.name
+client: O7p0fhgQKzuWF76Psp1UEA
+expiry: 1447429726
+uid: adele_maggio@grady.name
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;99914b932bd37a50b983c5e7c90ae93b&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7e479660-80f9-4e07-a604-198e823b2e69
-X-Runtime: 0.114173
+X-Request-Id: 9d555034-80fe-43e9-b5c0-9157ae3a7433
+X-Runtime: 0.115790
 Content-Length: 2</pre>
 
 #### Status

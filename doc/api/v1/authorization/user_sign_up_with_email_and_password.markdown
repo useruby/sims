@@ -26,11 +26,11 @@ Cookie: </pre>
 
 #### Body
 
-<pre>email=darian%40macgyverrunte.net&password=07q3fu5sx</pre>
+<pre>email=jarvis_nader%40douglasjakubowski.net&password=irlprn0i</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/auth&quot; -d &#39;email=darian%40macgyverrunte.net&amp;password=07q3fu5sx&#39; -X POST \
+<pre class="request">curl &quot;localhost:3000/api/v1/auth&quot; -d &#39;email=jarvis_nader%40douglasjakubowski.net&amp;password=irlprn0i&#39; -X POST \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -40,17 +40,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: ZGjee9aZ18ynyGoSM4eQsg
+access-token: QgKF7E8Ds5XK-fwMh3pXWQ
 token-type: Bearer
-client: 6J90elFuedOjrLFYEYCQ9w
-expiry: 1447413588
-uid: darian@macgyverrunte.net
+client: hlfDBdEl6305HQvQwtJFBA
+expiry: 1447429730
+uid: jarvis_nader@douglasjakubowski.net
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;5ef658b932e6461841b8ebc7c198bbf8&quot;
+ETag: W/&quot;982c19902b05706f399fd6af176bdbc5&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 96948b1b-9212-4e57-bf7c-03f667f30457
-X-Runtime: 0.130234
-Content-Length: 217</pre>
+X-Request-Id: baa70f21-4a7f-4686-bf7e-567c6331b391
+X-Runtime: 0.121336
+Content-Length: 237</pre>
 
 #### Status
 
@@ -63,10 +63,10 @@ Content-Length: 217</pre>
   "data": {
     "id": 1,
     "provider": "email",
-    "uid": "darian@macgyverrunte.net",
-    "email": "darian@macgyverrunte.net",
-    "created_at": "2015-10-30T11:19:48.694Z",
-    "updated_at": "2015-10-30T11:19:48.802Z",
+    "uid": "jarvis_nader@douglasjakubowski.net",
+    "email": "jarvis_nader@douglasjakubowski.net",
+    "created_at": "2015-10-30T15:48:49.992Z",
+    "updated_at": "2015-10-30T15:48:50.101Z",
     "admin": false
   }
 }</pre>

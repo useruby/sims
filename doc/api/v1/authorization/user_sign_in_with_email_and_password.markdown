@@ -28,11 +28,11 @@ Cookie: </pre>
 
 #### Body
 
-<pre>email=suzanne%40connelly.biz&password=3kq7wtrtl</pre>
+<pre>email=jennifer%40jast.co&password=c5o39fg3x</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/auth/sign_in&quot; -d &#39;email=suzanne%40connelly.biz&amp;password=3kq7wtrtl&#39; -X POST \
+<pre class="request">curl &quot;localhost:3000/api/v1/auth/sign_in&quot; -d &#39;email=jennifer%40jast.co&amp;password=c5o39fg3x&#39; -X POST \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -42,17 +42,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: Y5XoOmUecSmnZtViUNz9AQ
+access-token: AI7YHrm0rOahOyQCjD_ipg
 token-type: Bearer
-client: iUWFHPKOWM2iToXgL3RE4w
-expiry: 1447413588
-uid: suzanne@connelly.biz
+client: zVBnaezQLSXOrGDLA5GyRQ
+expiry: 1447429729
+uid: jennifer@jast.co
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;ca1091cf1bb30927c452273072e562ad&quot;
+ETag: W/&quot;cdf70a5199c951770ae90bddb40f5310&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a03d30c4-fa69-4857-b5e7-e3f32a0aa0ca
-X-Runtime: 0.121037
-Content-Length: 110</pre>
+X-Request-Id: e222794e-86c8-485b-82da-9a99e385ba15
+X-Runtime: 0.128140
+Content-Length: 102</pre>
 
 #### Status
 
@@ -64,8 +64,8 @@ Content-Length: 110</pre>
   "data": {
     "id": 1,
     "provider": "email",
-    "uid": "suzanne@connelly.biz",
-    "email": "suzanne@connelly.biz",
+    "uid": "jennifer@jast.co",
+    "email": "jennifer@jast.co",
     "admin": false
   }
 }</pre>
