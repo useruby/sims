@@ -78,7 +78,7 @@ resource "Products" do
       expect(status).to eq(200)
 
       product = Product.find_by(sku: product_attrs[:sku], created_by_id: user)
-      
+
       expect(product).to be_present
       expect(product.quantity).to eq(9)
       expect(product.product_locations.size).to be(2)
@@ -162,8 +162,8 @@ resource "Products" do
       auth_headers_for(user)
 
       location = ProductLocation.create(
-        warehouse_id: main_warehouse, 
-        product_id: FactoryGirl.create(:product_02, created_by_id: admin.id),
+        warehouse_id: main_warehouse.id, 
+        product_id: FactoryGirl.create(:product_02, created_by_id: admin.id).id,
         quantity: 7
       )
 
@@ -171,7 +171,7 @@ resource "Products" do
         id: product.id, 
         product_locations_attributes: [
           {
-            id: location.id, 
+            id: location.id,
             quantity: 10
           }
         ]
