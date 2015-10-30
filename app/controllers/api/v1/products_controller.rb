@@ -4,7 +4,7 @@ class Api::V1::ProductsController < ApplicationController
 
   def create
     @product = current_user.products.create(sanitized_params)
-  
+ 
     render :show
   end
 
@@ -26,6 +26,9 @@ class Api::V1::ProductsController < ApplicationController
 
   protected
   def sanitized_params
-    params.permit(:sku, :name, :description, :price, :quantity)
+    params.permit(
+      :sku, :name, :description, :price, 
+      product_locations_attributes: [:id, :warehouse_id, :quantity, :_destroy]
+    )
   end
 end

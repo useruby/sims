@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151028184029) do
+ActiveRecord::Schema.define(version: 20151030114512) do
+
+  create_table "product_locations", force: :cascade do |t|
+    t.integer  "product_id"
+    t.integer  "warehouse_id"
+    t.integer  "quantity"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "product_locations", ["product_id", "warehouse_id"], name: "index_product_locations_on_product_id_and_warehouse_id"
 
   create_table "products", force: :cascade do |t|
     t.string   "sku",                                         null: false
@@ -19,7 +29,6 @@ ActiveRecord::Schema.define(version: 20151028184029) do
     t.string   "description",    limit: 1024
     t.integer  "price_cents",                 default: 0,     null: false
     t.string   "price_currency",              default: "USD", null: false
-    t.integer  "quantity",                    default: 0
     t.datetime "created_at",                                  null: false
     t.datetime "updated_at",                                  null: false
     t.integer  "created_by_id"
@@ -49,5 +58,11 @@ ActiveRecord::Schema.define(version: 20151028184029) do
   add_index "users", ["email"], name: "index_users_on_email"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   add_index "users", ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
+
+  create_table "warehouses", force: :cascade do |t|
+    t.string   "name",       limit: 250
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
 end

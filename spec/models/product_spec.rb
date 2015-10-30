@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 describe Product do
+  let(:main_warehouse){FactoryGirl.create(:main_warehouse)}
+  let(:second_facility){FactoryGirl.create(:second_facility)}
+
   describe 'validations' do
     it 'should be invalid if sku is empty' do
       expect(FactoryGirl.build(:product_01, sku: '')).to be_invalid
@@ -23,15 +26,18 @@ describe Product do
       expect(FactoryGirl.build(:product_01, price: -10)).to be_invalid
     end
 
-    it 'should be invalid if quantity is less than zero' do
-      expect(FactoryGirl.build(:product_01, quantity: -2)).to be_invalid
+    it 'should be invalid if quantity of product in warehouse is less than zero' do
+      expect(FactoryGirl.create(:product_01, locations: {main_warehouse => -4})).to be_invalid
     end
   end
 
-  describe 'scopes' do
-    %i{product_01 product_02 product_03}.each do |product_name|
-      let!(product_name){FactoryGirl.create(product_name)}
+  describe 'products availability in stock' do
+    let!(:product_01) do 
+      FactoryGirl.create(:product_01, locations: {main_warehouse => 5, second_facility => 4})
     end
+
+    let!(:product_02){FactoryGirl.create(:product_02)}
+    let!(:product_03){FactoryGirl.create(:product_03, locations: {main_warehouse => 5})}
 
     describe '.on_stock' do
       it 'should return product that is on stock' do
@@ -48,6 +54,22 @@ describe Product do
 
         expect(products).to include(product_02)
       end
+    end
+  end
+
+  describe '#quantity' do
+    let(:product) do 
+      FactoryGirl.create(:product_01, locations: {main_warehouse => 5, second_facility => 4})
+    end
+
+    let(:out_of_stock_product){FactoryGirl.create(:product_02)}
+
+    it 'should sum quantity from all the warehouse' do
+      expect(product.quantity).to eq(9) 
+    end
+
+    it 'should return 0 if product is not stored in the any locations' do
+      expect(out_of_stock_product.quantity).to eq(0)
     end
   end
 end
