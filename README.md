@@ -1,4 +1,5 @@
 # README
+[![Build Status](https://travis-ci.org/useruby/sims.svg?branch=master)](https://travis-ci.org/useruby/sims)
 
 ## Simple Inventory Management System
 
