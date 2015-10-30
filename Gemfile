@@ -18,6 +18,9 @@ group :development, :test do
     gem 'rspec-rails', '~> 3.0'
     gem 'rspec_api_documentation'
 
+    gem 'simplecov', require: false
+    gem 'simplecov-console', require: false
+
     gem 'database_cleaner'
 
     gem 'factory_girl_rails'
