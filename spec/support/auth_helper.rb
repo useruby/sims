@@ -3,4 +3,3 @@ def auth_headers_for(user)
     header key, value
   end
 end
-

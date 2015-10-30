@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :main_warehouse, class: Warehouse do
-    name 'Main warehouse'    
+    name 'Main warehouse'
   end
 
   factory :second_facility, class: Warehouse do

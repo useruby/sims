@@ -1,0 +1,19 @@
+AllCops:
+  RunRailsCops: true
+  DisplayCopNames: true
+  Exclude:
+    - 'Rakefile'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'app/views/**/*.jbuilder'
+
+Style/Documentation:
+  Enabled: False
+
+Style/ClassAndModuleChildren:
+  Enabled: False
+
+Metrics/LineLength:
+  Exclude:
+    - 'spec/**/*'

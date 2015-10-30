@@ -4,7 +4,7 @@ class Api::V1::ProductsController < ApplicationController
 
   def create
     @product = current_user.products.create(sanitized_params)
- 
+
     render_result_after_create_or_update
   end
 
@@ -21,9 +21,10 @@ class Api::V1::ProductsController < ApplicationController
   end
 
   protected
+
   def sanitized_params
     params.permit(
-      :sku, :name, :description, :price, 
+      :sku, :name, :description, :price,
       product_locations_attributes: [:id, :warehouse_id, :quantity, :_destroy]
     )
   end
@@ -32,7 +33,7 @@ class Api::V1::ProductsController < ApplicationController
     if @product.valid?
       render :show
     else
-      render json: {error: @product.errors}, status: 400
+      render json: { error: @product.errors }, status: 400
     end
   end
 end

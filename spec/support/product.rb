@@ -1,6 +1,6 @@
 RSpec::Matchers.define :be_eq_to_serialization do |attrs|
   match do |product|
-    %w{sku name description quantity}.each do |attr_name|
+    %w(sku name description quantity).each do |attr_name|
       expect(attrs[attr_name]).to eq(product.send(attr_name))
     end
 
@@ -16,4 +16,3 @@ RSpec::Matchers.define :be_eq_to_serialization do |attrs|
     end
   end
 end
-

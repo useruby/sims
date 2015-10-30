@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 describe Product do
-  let(:main_warehouse){FactoryGirl.create(:main_warehouse)}
-  let(:second_facility){FactoryGirl.create(:second_facility)}
+  let(:main_warehouse) { FactoryGirl.create(:main_warehouse) }
+  let(:second_facility) { FactoryGirl.create(:second_facility) }
 
   describe 'validations' do
     it 'should be invalid if sku is empty' do
@@ -27,17 +27,17 @@ describe Product do
     end
 
     it 'should be invalid if quantity of product in warehouse is less than zero' do
-      expect(FactoryGirl.create(:product_01, locations: {main_warehouse => -4})).to be_invalid
+      expect(FactoryGirl.create(:product_01, locations: { main_warehouse => -4 })).to be_invalid
     end
   end
 
   describe 'products availability in stock' do
-    let!(:product_01) do 
-      FactoryGirl.create(:product_01, locations: {main_warehouse => 5, second_facility => 4})
+    let!(:product_01) do
+      FactoryGirl.create(:product_01, locations: { main_warehouse => 5, second_facility => 4 })
     end
 
-    let!(:product_02){FactoryGirl.create(:product_02)}
-    let!(:product_03){FactoryGirl.create(:product_03, locations: {main_warehouse => 5})}
+    let!(:product_02) { FactoryGirl.create(:product_02) }
+    let!(:product_03) { FactoryGirl.create(:product_03, locations: { main_warehouse => 5 }) }
 
     describe '.on_stock' do
       it 'should return product that is on stock' do
@@ -58,14 +58,14 @@ describe Product do
   end
 
   describe '#quantity' do
-    let(:product) do 
-      FactoryGirl.create(:product_01, locations: {main_warehouse => 5, second_facility => 4})
+    let(:product) do
+      FactoryGirl.create(:product_01, locations: { main_warehouse => 5, second_facility => 4 })
     end
 
-    let(:out_of_stock_product){FactoryGirl.create(:product_02)}
+    let(:out_of_stock_product) { FactoryGirl.create(:product_02) }
 
     it 'should sum quantity from all the warehouse' do
-      expect(product.quantity).to eq(9) 
+      expect(product.quantity).to eq(9)
     end
 
     it 'should return 0 if product is not stored in the any locations' do

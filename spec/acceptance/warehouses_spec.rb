@@ -1,8 +1,8 @@
 require 'rspec_api_documentation/dsl'
 
-resource "Warehouses" do
-  get "/api/v1/warehouses" do
-    example "Get list of warehouses" do
+resource 'Warehouses' do
+  get '/api/v1/warehouses' do
+    example 'Get list of warehouses' do
       main_warehouse = FactoryGirl.create(:main_warehouse)
       second_facility = FactoryGirl.create(:second_facility)
 
@@ -21,4 +21,3 @@ resource "Warehouses" do
     end
   end
 end
- 

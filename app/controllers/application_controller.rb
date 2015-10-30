@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   respond_to :json
-  
+
   include DeviseTokenAuth::Concerns::SetUserByToken
   include CanCan::ControllerAdditions
 
@@ -14,10 +14,10 @@ class ApplicationController < ActionController::API
   self.cache_store = ActionController::Base.cache_store
 
   rescue_from ActiveRecord::RecordNotFound do |exception|
-    render json: {"error": exception.message}, status: 404
+    render json: { "error": exception.message }, status: 404
   end
 
   rescue_from CanCan::AccessDenied do |exception|
-    render json: {"error": exception.message}, status: 401
+    render json: { "error": exception.message }, status: 401
   end
 end
