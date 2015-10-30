@@ -23,7 +23,7 @@ Without docker on machine that is already has ruby
 * run the ```rake db:setup```
 * and finally ```rails s```
 
-use localhost instead of ```<container_ip>``` in the *curl* command
+use ```localhost``` instead of ```<container_ip>``` in the *curl* command
 
 ### How to test web app
 
@@ -35,13 +35,13 @@ for getting more information.
 For start managing products through api you need to sign in and get an *access token*. 
 You can do it with the following command:
 
-```curl
+```sh
 curl -X POST http://<container_ip>:3000/api/v1/auth/sign_in\?email\=user@test.com\&password\=kahgahLuGip2ahy8 -d '' -i
 ```
 
 response should look like this
 
-```
+```http
 HTTP/1.1 200 OK 
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1; mode=block
@@ -73,7 +73,7 @@ testing purpose this feature is disable and access token is valid for the 2 week
 
 This is example for getting list of the product:
 
-```curl
+```sh
 curl -X GET http://<container_ip>:3000/api/v1/products -H 'Access-Token: <access_token>' -H 'Token-Type: Bearer' -H 'Client: <client_id>' -H 'Expiry: <expiry>' -H 'Uid: user@test.com'
 ```
 
