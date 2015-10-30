@@ -26,11 +26,11 @@ Cookie: </pre>
 
 #### Body
 
-<pre>email=erik%40osinski.org&password=urrumtva</pre>
+<pre>email=darian%40macgyverrunte.net&password=07q3fu5sx</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/auth&quot; -d &#39;email=erik%40osinski.org&amp;password=urrumtva&#39; -X POST \
+<pre class="request">curl &quot;localhost:3000/api/v1/auth&quot; -d &#39;email=darian%40macgyverrunte.net&amp;password=07q3fu5sx&#39; -X POST \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -40,17 +40,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: DS4vGaaeKTeQ0UAeFtQltg
+access-token: ZGjee9aZ18ynyGoSM4eQsg
 token-type: Bearer
-client: PuKfMMsbGbt3yw1wxVrKHg
-expiry: 1447330074
-uid: erik@osinski.org
+client: 6J90elFuedOjrLFYEYCQ9w
+expiry: 1447413588
+uid: darian@macgyverrunte.net
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;cff4ba60877749bce7b18cafd990ef8a&quot;
+ETag: W/&quot;5ef658b932e6461841b8ebc7c198bbf8&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: aa8cb24e-985f-4793-9573-4036dbd839b8
-X-Runtime: 0.239304
-Content-Length: 201</pre>
+X-Request-Id: 96948b1b-9212-4e57-bf7c-03f667f30457
+X-Runtime: 0.130234
+Content-Length: 217</pre>
 
 #### Status
 
@@ -63,10 +63,10 @@ Content-Length: 201</pre>
   "data": {
     "id": 1,
     "provider": "email",
-    "uid": "erik@osinski.org",
-    "email": "erik@osinski.org",
-    "created_at": "2015-10-29T12:07:54.748Z",
-    "updated_at": "2015-10-29T12:07:54.967Z",
+    "uid": "darian@macgyverrunte.net",
+    "email": "darian@macgyverrunte.net",
+    "created_at": "2015-10-30T11:19:48.694Z",
+    "updated_at": "2015-10-30T11:19:48.802Z",
     "admin": false
   }
 }</pre>

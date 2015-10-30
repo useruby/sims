@@ -7,11 +7,11 @@
 
 #### Headers
 
-<pre>Access-Token: EcZUghlWYvXBB4pXZMXkgw
+<pre>Access-Token: 4eGiBe2Znuk7rB7abuPT5A
 Token-Type: Bearer
-Client: i_BKwQOoimAqZD7gVh9CVA
-Expiry: 1447330073
-Uid: emory@ricemacejkovic.net
+Client: ZLdtMqxoMb6n7dZpN3cJYA
+Expiry: 1447413588
+Uid: tod_gibson@mraz.name
 Host: example.org
 Cookie: </pre>
 
@@ -22,11 +22,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products&quot; -X GET \
-	-H &quot;Access-Token: EcZUghlWYvXBB4pXZMXkgw&quot; \
+	-H &quot;Access-Token: 4eGiBe2Znuk7rB7abuPT5A&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: i_BKwQOoimAqZD7gVh9CVA&quot; \
-	-H &quot;Expiry: 1447330073&quot; \
-	-H &quot;Uid: emory@ricemacejkovic.net&quot;</pre>
+	-H &quot;Client: ZLdtMqxoMb6n7dZpN3cJYA&quot; \
+	-H &quot;Expiry: 1447413588&quot; \
+	-H &quot;Uid: tod_gibson@mraz.name&quot;</pre>
 
 ### Response
 
@@ -35,12 +35,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
+access-token: 4eGiBe2Znuk7rB7abuPT5A
+token-type: Bearer
+client: ZLdtMqxoMb6n7dZpN3cJYA
+expiry: 1447413588
+uid: tod_gibson@mraz.name
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;199d30e592d0952dadb80f87c306dfb3&quot;
+ETag: W/&quot;8b556a4029316e02e96f9fb09c9f024a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8ac6f1f8-2c40-45b4-9493-57075ddee1af
-X-Runtime: 0.135812
-Content-Length: 1473</pre>
+X-Request-Id: 3f6bcf10-dadb-42c0-8439-f3853e376578
+X-Runtime: 0.127378
+Content-Length: 1500</pre>
 
 #### Status
 
@@ -58,7 +63,7 @@ Content-Length: 1473</pre>
       "quantity": 10,
       "created_by": {
         "id": 1,
-        "email": "amya_wehner@robertstoy.org"
+        "email": "clair_abernathy@casperluettgen.info"
       }
     },
     {
@@ -69,7 +74,7 @@ Content-Length: 1473</pre>
       "quantity": 0,
       "created_by": {
         "id": 1,
-        "email": "amya_wehner@robertstoy.org"
+        "email": "clair_abernathy@casperluettgen.info"
       }
     },
     {
@@ -80,7 +85,7 @@ Content-Length: 1473</pre>
       "quantity": 8,
       "created_by": {
         "id": 1,
-        "email": "amya_wehner@robertstoy.org"
+        "email": "clair_abernathy@casperluettgen.info"
       }
     }
   ]

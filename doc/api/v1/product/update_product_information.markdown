@@ -28,11 +28,11 @@ Description : product available quantity
 
 #### Headers
 
-<pre>Access-Token: j2qrpMV7I1VCphOdh0_Sxw
+<pre>Access-Token: 3MM0E-otbTSaO0GAak5YpA
 Token-Type: Bearer
-Client: evQc39XkJ6q7LXQg8nY3ig
-Expiry: 1447330073
-Uid: emory@ricemacejkovic.net
+Client: m7eef6-XQp6oZVrxK-V94Q
+Expiry: 1447413587
+Uid: tod_gibson@mraz.name
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
@@ -48,11 +48,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -d &#39;name=Updated%3A+Toysmith+Newton%27s+Cradle+Physics+Science+Kit&#39; -X PUT \
-	-H &quot;Access-Token: j2qrpMV7I1VCphOdh0_Sxw&quot; \
+	-H &quot;Access-Token: 3MM0E-otbTSaO0GAak5YpA&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: evQc39XkJ6q7LXQg8nY3ig&quot; \
-	-H &quot;Expiry: 1447330073&quot; \
-	-H &quot;Uid: emory@ricemacejkovic.net&quot; \
+	-H &quot;Client: m7eef6-XQp6oZVrxK-V94Q&quot; \
+	-H &quot;Expiry: 1447413587&quot; \
+	-H &quot;Uid: tod_gibson@mraz.name&quot; \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -62,12 +62,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
+access-token: 3MM0E-otbTSaO0GAak5YpA
+token-type: Bearer
+client: m7eef6-XQp6oZVrxK-V94Q
+expiry: 1447413587
+uid: tod_gibson@mraz.name
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;40affd28f2eebfec0152fbfceca4aa39&quot;
+ETag: W/&quot;3ff8ec68e3ae4851930dd16d24b6ef30&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ca2816b3-32ec-44e3-b5c6-99438ff2bbc3
-X-Runtime: 0.125762
-Content-Length: 393</pre>
+X-Request-Id: e1e8670a-6b36-4df3-aae0-cfd97b715b52
+X-Runtime: 0.129093
+Content-Length: 389</pre>
 
 #### Status
 
@@ -83,6 +88,6 @@ Content-Length: 393</pre>
   "quantity": 10,
   "created_by": {
     "id": 1,
-    "email": "emory@ricemacejkovic.net"
+    "email": "tod_gibson@mraz.name"
   }
 }</pre>

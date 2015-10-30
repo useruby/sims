@@ -28,11 +28,11 @@ Cookie: </pre>
 
 #### Body
 
-<pre>email=rudolph.muller%40dicki.name&password=wm8xh7ej8</pre>
+<pre>email=suzanne%40connelly.biz&password=3kq7wtrtl</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/auth/sign_in&quot; -d &#39;email=rudolph.muller%40dicki.name&amp;password=wm8xh7ej8&#39; -X POST \
+<pre class="request">curl &quot;localhost:3000/api/v1/auth/sign_in&quot; -d &#39;email=suzanne%40connelly.biz&amp;password=3kq7wtrtl&#39; -X POST \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -42,17 +42,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: -ubrw992DlPsUvptfumuOA
+access-token: Y5XoOmUecSmnZtViUNz9AQ
 token-type: Bearer
-client: 5BsMdol5BwrZfxDk_q-DnA
-expiry: 1447330075
-uid: rudolph.muller@dicki.name
+client: iUWFHPKOWM2iToXgL3RE4w
+expiry: 1447413588
+uid: suzanne@connelly.biz
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;c7170741d35a4024e1f6d35a9be347c1&quot;
+ETag: W/&quot;ca1091cf1bb30927c452273072e562ad&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a9456ceb-1f7a-4f87-bc21-fa0812ac104c
-X-Runtime: 0.230337
-Content-Length: 120</pre>
+X-Request-Id: a03d30c4-fa69-4857-b5e7-e3f32a0aa0ca
+X-Runtime: 0.121037
+Content-Length: 110</pre>
 
 #### Status
 
@@ -64,8 +64,8 @@ Content-Length: 120</pre>
   "data": {
     "id": 1,
     "provider": "email",
-    "uid": "rudolph.muller@dicki.name",
-    "email": "rudolph.muller@dicki.name",
+    "uid": "suzanne@connelly.biz",
+    "email": "suzanne@connelly.biz",
     "admin": false
   }
 }</pre>

@@ -13,11 +13,11 @@ Description : product id
 
 #### Headers
 
-<pre>Access-Token: FWBF4BAanC0qKSWk8T08Tw
+<pre>Access-Token: tzGeOJbiW3O0TMkgpo83Yw
 Token-Type: Bearer
-Client: GzuOdJ9vm-ez0S9kdbx3PA
-Expiry: 1447330072
-Uid: emory@ricemacejkovic.net
+Client: 51zrMbTJcwxSFPmscazGEw
+Expiry: 1447413586
+Uid: tod_gibson@mraz.name
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
@@ -29,11 +29,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -d &#39;&#39; -X DELETE \
-	-H &quot;Access-Token: FWBF4BAanC0qKSWk8T08Tw&quot; \
+	-H &quot;Access-Token: tzGeOJbiW3O0TMkgpo83Yw&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: GzuOdJ9vm-ez0S9kdbx3PA&quot; \
-	-H &quot;Expiry: 1447330072&quot; \
-	-H &quot;Uid: emory@ricemacejkovic.net&quot; \
+	-H &quot;Client: 51zrMbTJcwxSFPmscazGEw&quot; \
+	-H &quot;Expiry: 1447413586&quot; \
+	-H &quot;Uid: tod_gibson@mraz.name&quot; \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -43,11 +43,16 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
+access-token: tzGeOJbiW3O0TMkgpo83Yw
+token-type: Bearer
+client: 51zrMbTJcwxSFPmscazGEw
+expiry: 1447413586
+uid: tod_gibson@mraz.name
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;99914b932bd37a50b983c5e7c90ae93b&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a9896f48-781d-4f10-861f-85eec49a1542
-X-Runtime: 0.118094
+X-Request-Id: 7e479660-80f9-4e07-a604-198e823b2e69
+X-Runtime: 0.114173
 Content-Length: 2</pre>
 
 #### Status

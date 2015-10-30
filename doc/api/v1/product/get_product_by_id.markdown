@@ -13,11 +13,11 @@ Description : product id
 
 #### Headers
 
-<pre>Access-Token: VwqNj13BFyo9lT8dmeBE5w
+<pre>Access-Token: Lbb0hdXMxBSN3RMP79X9aA
 Token-Type: Bearer
-Client: W9jm8-mpZONXLAiQgzHvYQ
-Expiry: 1447330071
-Uid: emory@ricemacejkovic.net
+Client: IPqZxlk-rbJ1jzX-7KQUyg
+Expiry: 1447413588
+Uid: tod_gibson@mraz.name
 Host: example.org
 Cookie: </pre>
 
@@ -28,11 +28,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -X GET \
-	-H &quot;Access-Token: VwqNj13BFyo9lT8dmeBE5w&quot; \
+	-H &quot;Access-Token: Lbb0hdXMxBSN3RMP79X9aA&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: W9jm8-mpZONXLAiQgzHvYQ&quot; \
-	-H &quot;Expiry: 1447330071&quot; \
-	-H &quot;Uid: emory@ricemacejkovic.net&quot;</pre>
+	-H &quot;Client: IPqZxlk-rbJ1jzX-7KQUyg&quot; \
+	-H &quot;Expiry: 1447413588&quot; \
+	-H &quot;Uid: tod_gibson@mraz.name&quot;</pre>
 
 ### Response
 
@@ -41,12 +41,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
+access-token: Lbb0hdXMxBSN3RMP79X9aA
+token-type: Bearer
+client: IPqZxlk-rbJ1jzX-7KQUyg
+expiry: 1447413588
+uid: tod_gibson@mraz.name
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6ca2722dbcc4065b85098c8f9c6b05cc&quot;
+ETag: W/&quot;f3bddef84ea2f6bf75af4cf7fa262fdd&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: e4b04819-fd87-4308-9e00-2714e315785f
-X-Runtime: 0.164270
-Content-Length: 384</pre>
+X-Request-Id: 69101b01-e035-4df6-83cb-86337b42fa2e
+X-Runtime: 0.119723
+Content-Length: 380</pre>
 
 #### Status
 
@@ -62,6 +67,6 @@ Content-Length: 384</pre>
   "quantity": 10,
   "created_by": {
     "id": 1,
-    "email": "emory@ricemacejkovic.net"
+    "email": "tod_gibson@mraz.name"
   }
 }</pre>
