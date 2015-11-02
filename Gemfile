@@ -29,7 +29,7 @@ group :development, :test do
   gem 'pry-rails'
 
   gem 'rubocop', require: false
-  
+
   gem 'bullet'
 end
 

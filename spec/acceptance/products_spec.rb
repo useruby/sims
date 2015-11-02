@@ -6,7 +6,7 @@ resource 'Products' do
 
   let(:main_warehouse) { FactoryGirl.create(:main_warehouse) }
   let(:second_facility) { FactoryGirl.create(:second_facility) }
- 
+
   get '/api/v1/products' do
     example 'Get list of all products' do
       products = [

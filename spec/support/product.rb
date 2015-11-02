@@ -14,4 +14,3 @@ def expect_product_to_be_eq_to_serialization(product, serialization)
     expect(serialization['product_locations'][index]['quantity']).to eq(location.quantity)
   end
 end
-

@@ -5,7 +5,7 @@ class Api::V1::ProductsController < ApplicationController
 
   def index
     @products = @products.includes(:created_by)
-      .includes(product_locations: :warehouse)
+                .includes(product_locations: :warehouse)
   end
 
   def create
@@ -37,7 +37,7 @@ class Api::V1::ProductsController < ApplicationController
 
   def load_product_with_locations_and_owner
     @product = Product.includes(:created_by)
-      .includes(product_locations: :warehouse).find(params[:id])
+               .includes(product_locations: :warehouse).find(params[:id])
   end
 
   def render_result_after_create_or_update
