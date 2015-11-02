@@ -6,28 +6,32 @@ describe Product do
 
   describe 'validations' do
     it 'should be invalid if sku is empty' do
-      expect(FactoryGirl.build(:product_01, sku: '')).to be_invalid
+      expect(FactoryGirl.build(:product_01, sku: '')).to be_invalid_with_fields(:sku)
     end
 
     it 'should be invalid if sku is not unique' do
-      expect(FactoryGirl.create(:product_01))
-      expect(FactoryGirl.build(:product_01)).to be_invalid
+      FactoryGirl.create(:product_01)
+      expect(FactoryGirl.build(:product_01)).to be_invalid_with_fields(:sku)
     end
 
     it 'should be invalid if sku in the wrong format' do
-      expect(FactoryGirl.build(:product_01, sku: 'A1A3NVCDSE')).to be_invalid
+      expect(FactoryGirl.build(:product_01, sku: 'A1A3NVCDSE'))
+        .to be_invalid_with_fields(:sku)
     end
 
     it 'should be invalid if name is empty' do
-      expect(FactoryGirl.build(:product_01, name: '')).to be_invalid
+      expect(FactoryGirl.build(:product_01, name: ''))
+        .to be_invalid_with_fields(:name)
     end
 
     it 'should be invalid if price is less than zero' do
-      expect(FactoryGirl.build(:product_01, price: -10)).to be_invalid
+      expect(FactoryGirl.build(:product_01, price: -10))
+        .to be_invalid_with_fields(:price)
     end
 
     it 'should be invalid if quantity of product in warehouse is less than zero' do
-      expect(FactoryGirl.create(:product_01, locations: { main_warehouse => -4 })).to be_invalid
+      expect(FactoryGirl.create(:product_01, locations: { main_warehouse => -4 }))
+        .to be_invalid_with_fields(:'product_locations.quantity')
     end
   end
 
