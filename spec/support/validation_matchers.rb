@@ -3,7 +3,7 @@ RSpec::Matchers.define :be_invalid_with_fields do |*fields|
     resource.invalid? && resource.errors.keys == fields
   end
 
-  failure_message_for_should do |resource|
+  failure_message do |resource|
     %(
       expect that #{resource} should be invalid with following
       fields #{resource.errors.keys} that contains non valid data
