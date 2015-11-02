@@ -6,7 +6,7 @@ resource 'Products' do
 
   let(:main_warehouse) { FactoryGirl.create(:main_warehouse) }
   let(:second_facility) { FactoryGirl.create(:second_facility) }
-
+ 
   get '/api/v1/products' do
     example 'Get list of all products' do
       products = [
@@ -34,7 +34,7 @@ resource 'Products' do
       expect(products.size).to eq(3)
 
       products_from_response.each_with_index do |product, index|
-        expect(products[index]).to be_eq_to_serialization(product)
+        expect_product_to_be_eq_to_serialization(products[index], product)
       end
     end
   end
@@ -51,7 +51,7 @@ resource 'Products' do
 
       expect(status).to eq(200)
 
-      expect(product).to be_eq_to_serialization(JSON.parse(response_body))
+      expect_product_to_be_eq_to_serialization(product, JSON.parse(response_body))
     end
   end
 
@@ -107,7 +107,7 @@ resource 'Products' do
 
       expect(status).to eq(200)
 
-      expect(product.reload).to be_eq_to_serialization(JSON.parse(response_body))
+      expect_product_to_be_eq_to_serialization(product.reload, JSON.parse(response_body))
       expect(product.name).to be_start_with('Updated: ')
     end
 
@@ -128,7 +128,7 @@ resource 'Products' do
 
       expect(status).to eq(200)
 
-      expect(product.reload).to be_eq_to_serialization(JSON.parse(response_body))
+      expect_product_to_be_eq_to_serialization(product.reload, JSON.parse(response_body))
 
       expect(product.product_locations.size).to eq(2)
       expect(product.quantity).to eq(10)
@@ -152,7 +152,7 @@ resource 'Products' do
 
       expect(status).to eq(200)
 
-      expect(product.reload).to be_eq_to_serialization(JSON.parse(response_body))
+      expect_product_to_be_eq_to_serialization(product.reload, JSON.parse(response_body))
 
       expect(product.product_locations.size).to eq(1)
       expect(product.quantity).to eq(4)
@@ -223,7 +223,7 @@ resource 'Products' do
 
       expect(status).to eq(200)
 
-      expect(product.reload).to be_eq_to_serialization(JSON.parse(response_body))
+      expect_product_to_be_eq_to_serialization(product.reload, JSON.parse(response_body))
       expect(product.name).to be_start_with('Updated: ')
     end
   end
