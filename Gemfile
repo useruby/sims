@@ -29,6 +29,8 @@ group :development, :test do
   gem 'pry-rails'
 
   gem 'rubocop', require: false
+  
+  gem 'bullet'
 end
 
 # To use ActiveModel has_secure_password

@@ -167,15 +167,17 @@ resource 'Products' do
         quantity: 7
       )
 
-      do_request(
-        id: product.id,
-        product_locations_attributes: [
-          {
-            id: location.id,
-            quantity: 10
-          }
-        ]
-      )
+      skip_bullet do # ignore following: Unused Eager Loading detected ProductLocation => [:warehouse]
+        do_request(
+          id: product.id,
+          product_locations_attributes: [
+            {
+              id: location.id,
+              quantity: 10
+            }
+          ]
+        )
+      end
 
       expect(status).to eq(404)
 
@@ -187,7 +189,9 @@ resource 'Products' do
     example 'Update product with invalid information', document: false do
       auth_headers_for(user)
 
-      do_request(id: product.id, name: '')
+      skip_bullet do # ignore following: Unused Eager Loading detected ProductLocation => [:warehouse]
+        do_request(id: product.id, name: '')
+      end
 
       expect(status).to eq(400)
 
@@ -208,7 +212,9 @@ resource 'Products' do
     example 'Update product by not owner', document: false do
       auth_headers_for(FactoryGirl.create(:user, email: Faker::Internet.email))
 
-      do_request(id: product.id, name: "Updated: #{product.name}")
+      skip_bullet do # ignore following: Unused Eager Loading detected ProductLocation => [:warehouse]
+        do_request(id: product.id, name: "Updated: #{product.name}")
+      end
 
       expect(status).to eq(401)
 

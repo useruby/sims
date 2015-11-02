@@ -42,6 +42,9 @@ GEM
       parser (~> 2.2)
     bcrypt (3.1.10)
     builder (3.2.2)
+    bullet (4.14.10)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.9.0)
     cancancan (1.13.1)
     coderay (1.1.0)
     colorize (0.7.7)
@@ -194,6 +197,7 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uniform_notifier (1.9.0)
     warden (1.2.3)
       rack (>= 1.0)
 
@@ -201,6 +205,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bullet
   cancancan (~> 1.10)
   database_cleaner
   devise_token_auth
