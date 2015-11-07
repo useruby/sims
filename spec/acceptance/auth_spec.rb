@@ -3,6 +3,9 @@ require 'rspec_api_documentation/dsl'
 resource 'Authorization' do
   let(:email) { Faker::Internet.email }
 
+  header 'Accept', 'application/json'
+  header 'Content-Type', 'application/json'
+  
   post '/api/v1/auth' do
     parameter :email, 'user email', required: true
     parameter :password, 'user password', required: true

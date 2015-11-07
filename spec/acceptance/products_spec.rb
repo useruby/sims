@@ -62,6 +62,9 @@ resource 'Products' do
     parameter :price, 'product price in USD'
     parameter :product_locations_attributes, 'array where each element contains warehouse_id and quantity'
 
+    header 'Accept', 'application/json'
+    header 'Content-Type', 'application/json'
+
     example 'Create a new product' do
       auth_headers_for(user)
 
@@ -92,6 +95,9 @@ resource 'Products' do
     parameter :description, 'product description (maximum 1024 characters)'
     parameter :price, 'product price in USD'
     parameter :product_locations_attributes, 'array where each element contains id, warehouse_id and quantity'
+
+    header 'Accept', 'application/json'
+    header 'Content-Type', 'application/json'
 
     let(:product) do
       FactoryGirl.create(

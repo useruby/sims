@@ -5,4 +5,5 @@ RspecApiDocumentation.configure do |config|
   config.api_name = 'Sims API'
   config.curl_host = 'localhost:3000'
   config.curl_headers_to_filter = %w(Host Cookie)
+  config.post_body_formatter = :json
 end
