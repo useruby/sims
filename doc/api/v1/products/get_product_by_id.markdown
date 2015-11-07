@@ -13,11 +13,11 @@ Description : product id
 
 #### Headers
 
-<pre>Access-Token: lrHriW_fdx9XdLNrouID1g
+<pre>Access-Token: ppp0eWAKxqa4pgm-TdHQGQ
 Token-Type: Bearer
-Client: ma2u12dAHFaN9sEBF1VlAw
-Expiry: 1447429727
-Uid: adele_maggio@grady.name
+Client: 7lAUCH3w36WxNIHc9dsIqg
+Expiry: 1448113605
+Uid: geo@hahnhackett.info
 Host: example.org
 Cookie: </pre>
 
@@ -28,11 +28,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -X GET \
-	-H &quot;Access-Token: lrHriW_fdx9XdLNrouID1g&quot; \
+	-H &quot;Access-Token: ppp0eWAKxqa4pgm-TdHQGQ&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: ma2u12dAHFaN9sEBF1VlAw&quot; \
-	-H &quot;Expiry: 1447429727&quot; \
-	-H &quot;Uid: adele_maggio@grady.name&quot;</pre>
+	-H &quot;Client: 7lAUCH3w36WxNIHc9dsIqg&quot; \
+	-H &quot;Expiry: 1448113605&quot; \
+	-H &quot;Uid: geo@hahnhackett.info&quot;</pre>
 
 ### Response
 
@@ -41,17 +41,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: lrHriW_fdx9XdLNrouID1g
+access-token: ppp0eWAKxqa4pgm-TdHQGQ
 token-type: Bearer
-client: ma2u12dAHFaN9sEBF1VlAw
-expiry: 1447429727
-uid: adele_maggio@grady.name
+client: 7lAUCH3w36WxNIHc9dsIqg
+expiry: 1448113605
+uid: geo@hahnhackett.info
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;704ba93b151bfc1b010df9b3752d2a0d&quot;
+ETag: W/&quot;83373a0be15a2a95fc6c7b82ff86f25a&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 68ca54b2-3969-425f-8948-ece91941b3c4
-X-Runtime: 0.121071
-Content-Length: 456</pre>
+X-Request-Id: 21b1218d-2be2-43e6-8b14-89519f53c763
+X-Runtime: 0.161531
+Content-Length: 451</pre>
 
 #### Status
 
@@ -62,12 +62,12 @@ Content-Length: 456</pre>
 <pre>{
   "sku": "B0007P5KHG",
   "name": "Toysmith Newton's Cradle Physics Science Kit",
-  "description": "\n        Newton's Cradle is a classic! Also known as balance balls, \n        these steel balls keep you entertained throughout the day. Pull back \n        one or more of the balls and let them drop down.\n      ",
+  "description": "\n        Newton's Cradle is a classic! Also known as balance balls,\n        these steel balls keep you entertained throughout the day. Pull back\n        one or more of the balls and let them drop down.\n      ",
   "price": "$8.50",
   "quantity": 3,
   "created_by": {
     "id": 1,
-    "email": "adele_maggio@grady.name"
+    "email": "geo@hahnhackett.info"
   },
   "product_locations": [
     {

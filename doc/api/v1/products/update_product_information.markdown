@@ -28,13 +28,14 @@ Description : array where each element contains id, warehouse_id and quantity
 
 #### Headers
 
-<pre>Access-Token: yDJvlZNjxGVakycFmW1HfQ
+<pre>Accept: application/json
+Content-Type: application/json
+Access-Token: SqnFS2FkijDGk_-hrZ8YAA
 Token-Type: Bearer
-Client: X7UJEPmmirgHZAjWy6JsmA
-Expiry: 1447429729
-Uid: adele_maggio@grady.name
+Client: H8yvbtFe8hvyi8nsDe3PYw
+Expiry: 1448113606
+Uid: geo@hahnhackett.info
 Host: example.org
-Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
@@ -43,17 +44,18 @@ Cookie: </pre>
 
 #### Body
 
-<pre>name=Updated%3A+Toysmith+Newton%27s+Cradle+Physics+Science+Kit</pre>
+<pre>{"name":"Updated: Toysmith Newton's Cradle Physics Science Kit"}</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -d &#39;name=Updated%3A+Toysmith+Newton%27s+Cradle+Physics+Science+Kit&#39; -X PUT \
-	-H &quot;Access-Token: yDJvlZNjxGVakycFmW1HfQ&quot; \
+<pre class="request">curl &quot;localhost:3000/api/v1/products/1&quot; -d &#39;{&quot;name&quot;:&quot;Updated: Toysmith Newton\u0027s Cradle Physics Science Kit&quot;}&#39; -X PUT \
+	-H &quot;Accept: application/json&quot; \
+	-H &quot;Content-Type: application/json&quot; \
+	-H &quot;Access-Token: SqnFS2FkijDGk_-hrZ8YAA&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: X7UJEPmmirgHZAjWy6JsmA&quot; \
-	-H &quot;Expiry: 1447429729&quot; \
-	-H &quot;Uid: adele_maggio@grady.name&quot; \
-	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
+	-H &quot;Client: H8yvbtFe8hvyi8nsDe3PYw&quot; \
+	-H &quot;Expiry: 1448113606&quot; \
+	-H &quot;Uid: geo@hahnhackett.info&quot;</pre>
 
 ### Response
 
@@ -62,17 +64,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: yDJvlZNjxGVakycFmW1HfQ
+access-token: SqnFS2FkijDGk_-hrZ8YAA
 token-type: Bearer
-client: X7UJEPmmirgHZAjWy6JsmA
-expiry: 1447429729
-uid: adele_maggio@grady.name
+client: H8yvbtFe8hvyi8nsDe3PYw
+expiry: 1448113606
+uid: geo@hahnhackett.info
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;f6e589e8518c7d37088d3609b58743db&quot;
+ETag: W/&quot;0a7b99ec4c865049d6829814b63066f6&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 57827ae7-15af-452a-89b0-c8686b8fb956
-X-Runtime: 0.127597
-Content-Length: 510</pre>
+X-Request-Id: 4a914444-2fb6-45b8-b6b4-39f6cfa2668f
+X-Runtime: 0.129523
+Content-Length: 505</pre>
 
 #### Status
 
@@ -83,12 +85,12 @@ Content-Length: 510</pre>
 <pre>{
   "sku": "B0007P5KHG",
   "name": "Updated: Toysmith Newton's Cradle Physics Science Kit",
-  "description": "\n        Newton's Cradle is a classic! Also known as balance balls, \n        these steel balls keep you entertained throughout the day. Pull back \n        one or more of the balls and let them drop down.\n      ",
+  "description": "\n        Newton's Cradle is a classic! Also known as balance balls,\n        these steel balls keep you entertained throughout the day. Pull back\n        one or more of the balls and let them drop down.\n      ",
   "price": "$8.50",
   "quantity": 5,
   "created_by": {
     "id": 1,
-    "email": "adele_maggio@grady.name"
+    "email": "geo@hahnhackett.info"
   },
   "product_locations": [
     {

@@ -7,11 +7,11 @@
 
 #### Headers
 
-<pre>Access-Token: _YS341Dm_jUGBp52zZCzHA
+<pre>Access-Token: KQA0UGado9ge3wCd4eXNGA
 Token-Type: Bearer
-Client: BO3GYB0VyvYiWNLfpz7igA
-Expiry: 1447429725
-Uid: adele_maggio@grady.name
+Client: -VDcQ2e7COprmvPstZ4GOQ
+Expiry: 1448113609
+Uid: geo@hahnhackett.info
 Host: example.org
 Cookie: </pre>
 
@@ -22,11 +22,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/warehouses&quot; -X GET \
-	-H &quot;Access-Token: _YS341Dm_jUGBp52zZCzHA&quot; \
+	-H &quot;Access-Token: KQA0UGado9ge3wCd4eXNGA&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: BO3GYB0VyvYiWNLfpz7igA&quot; \
-	-H &quot;Expiry: 1447429725&quot; \
-	-H &quot;Uid: adele_maggio@grady.name&quot;</pre>
+	-H &quot;Client: -VDcQ2e7COprmvPstZ4GOQ&quot; \
+	-H &quot;Expiry: 1448113609&quot; \
+	-H &quot;Uid: geo@hahnhackett.info&quot;</pre>
 
 ### Response
 
@@ -35,16 +35,16 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: _YS341Dm_jUGBp52zZCzHA
+access-token: KQA0UGado9ge3wCd4eXNGA
 token-type: Bearer
-client: BO3GYB0VyvYiWNLfpz7igA
-expiry: 1447429725
-uid: adele_maggio@grady.name
+client: -VDcQ2e7COprmvPstZ4GOQ
+expiry: 1448113609
+uid: geo@hahnhackett.info
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;333eb62cf52dd7b92df56c0ff7302ba2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: c9c7233b-29b9-49f6-88ad-a17fffd82604
-X-Runtime: 0.149792
+X-Request-Id: cbd103fc-4a96-4378-b529-e19182ef1282
+X-Runtime: 0.125075
 Content-Length: 83</pre>
 
 #### Status

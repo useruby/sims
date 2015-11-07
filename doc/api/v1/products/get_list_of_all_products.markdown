@@ -7,11 +7,11 @@
 
 #### Headers
 
-<pre>Access-Token: 1MZDJB31aXzsZxYloCZ6ww
+<pre>Access-Token: j1KSguaRJveYIcLaPzo46w
 Token-Type: Bearer
-Client: j0TCEILIfg4vmDi4afxnJg
-Expiry: 1447429729
-Uid: adele_maggio@grady.name
+Client: Ndm8q0Bm2n-ejg0kPpslJQ
+Expiry: 1448113606
+Uid: geo@hahnhackett.info
 Host: example.org
 Cookie: </pre>
 
@@ -22,11 +22,11 @@ Cookie: </pre>
 #### cURL
 
 <pre class="request">curl &quot;localhost:3000/api/v1/products&quot; -X GET \
-	-H &quot;Access-Token: 1MZDJB31aXzsZxYloCZ6ww&quot; \
+	-H &quot;Access-Token: j1KSguaRJveYIcLaPzo46w&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: j0TCEILIfg4vmDi4afxnJg&quot; \
-	-H &quot;Expiry: 1447429729&quot; \
-	-H &quot;Uid: adele_maggio@grady.name&quot;</pre>
+	-H &quot;Client: Ndm8q0Bm2n-ejg0kPpslJQ&quot; \
+	-H &quot;Expiry: 1448113606&quot; \
+	-H &quot;Uid: geo@hahnhackett.info&quot;</pre>
 
 ### Response
 
@@ -35,17 +35,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: 1MZDJB31aXzsZxYloCZ6ww
+access-token: j1KSguaRJveYIcLaPzo46w
 token-type: Bearer
-client: j0TCEILIfg4vmDi4afxnJg
-expiry: 1447429729
-uid: adele_maggio@grady.name
+client: Ndm8q0Bm2n-ejg0kPpslJQ
+expiry: 1448113606
+uid: geo@hahnhackett.info
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;4fc10cd2fe5cb6195f0c2a3dcc8e28d7&quot;
+ETag: W/&quot;35f758de0f80d78574fed5135ee46407&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: ddb5e1a4-4f8c-4a22-a94e-e869dc2814a1
-X-Runtime: 0.131594
-Content-Length: 1689</pre>
+X-Request-Id: 49be1595-4fb4-498f-a2cc-ef3bf122bfbf
+X-Runtime: 0.134305
+Content-Length: 1680</pre>
 
 #### Status
 
@@ -58,12 +58,12 @@ Content-Length: 1689</pre>
     {
       "sku": "B0007P5KHG",
       "name": "Toysmith Newton's Cradle Physics Science Kit",
-      "description": "\n        Newton's Cradle is a classic! Also known as balance balls, \n        these steel balls keep you entertained throughout the day. Pull back \n        one or more of the balls and let them drop down.\n      ",
+      "description": "\n        Newton's Cradle is a classic! Also known as balance balls,\n        these steel balls keep you entertained throughout the day. Pull back\n        one or more of the balls and let them drop down.\n      ",
       "price": "$8.50",
       "quantity": 9,
       "created_by": {
         "id": 1,
-        "email": "toby_stamm@towne.info"
+        "email": "lonny@davichinner.name"
       },
       "product_locations": [
         {
@@ -79,12 +79,12 @@ Content-Length: 1689</pre>
     {
       "sku": "B004C34D5O",
       "name": "Orion - Electronic Perpetual Motion",
-      "description": "\n        The Revolving Cosmos Perpetual Motion Desktop Toy is perfect for \n        your outer space themed office or room decor. A simple spin of the \n        top of the base sets the galaxy in motion. The multicolored rings \n        start spinning in different orbits around the planet in the center. \n        A top seller in the space museum stores and a cool gift for the \n        science physics enthusiast. Measures 11.5 inches tall. \n      ",
+      "description": "\n        The Revolving Cosmos Perpetual Motion Desktop Toy is perfect for\n        your outer space themed office or room decor. A simple spin of the\n        top of the base sets the galaxy in motion. The multicolored rings\n        start spinning in different orbits around the planet in the center.\n        A top seller in the space museum stores and a cool gift for the\n        science physics enthusiast. Measures 11.5 inches tall.\n      ",
       "price": "$10.47",
       "quantity": 0,
       "created_by": {
         "id": 1,
-        "email": "toby_stamm@towne.info"
+        "email": "lonny@davichinner.name"
       },
       "product_locations": [
 
@@ -93,12 +93,12 @@ Content-Length: 1689</pre>
     {
       "sku": "B00AJSWLO6",
       "name": "1 X Asteroid - Perpetual Motion",
-      "description": "\n        The Asteroid - Perpetual Motion is a piece of revolving art for your \n        desk. This kinetic sculpture has several brightly colored metallic \n        balls that rotate like a ferris wheel. It will keep you and anybody \n        else who watches it mesmerized for hours. Once star \n      ",
+      "description": "\n        The Asteroid - Perpetual Motion is a piece of revolving art for your\n        desk. This kinetic sculpture has several brightly colored metallic\n        balls that rotate like a ferris wheel. It will keep you and anybody\n        else who watches it mesmerized for hours. Once star\n      ",
       "price": "$9.78",
       "quantity": 5,
       "created_by": {
         "id": 1,
-        "email": "toby_stamm@towne.info"
+        "email": "lonny@davichinner.name"
       },
       "product_locations": [
         {

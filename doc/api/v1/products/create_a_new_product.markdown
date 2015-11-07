@@ -25,13 +25,14 @@ Description : array where each element contains warehouse_id and quantity
 
 #### Headers
 
-<pre>Access-Token: qvL-ihbW4SYBBHs16G3jtw
+<pre>Accept: application/json
+Content-Type: application/json
+Access-Token: TjVkfpIHU1Uvc2j2wWEemQ
 Token-Type: Bearer
-Client: DZUGMoG6XATAl7jpSS8Hrg
-Expiry: 1447429725
-Uid: adele_maggio@grady.name
+Client: aMYOv2q-TeRDPYIpF41tMw
+Expiry: 1448113608
+Uid: geo@hahnhackett.info
 Host: example.org
-Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
@@ -40,17 +41,18 @@ Cookie: </pre>
 
 #### Body
 
-<pre>sku=B0007P5KHG&name=Toysmith+Newton%27s+Cradle+Physics+Science+Kit&description=%0A++++++++Newton%27s+Cradle+is+a+classic%21+Also+known+as+balance+balls%2C+%0A++++++++these+steel+balls+keep+you+entertained+throughout+the+day.+Pull+back+%0A++++++++one+or+more+of+the+balls+and+let+them+drop+down.%0A++++++&price=8.5&product_locations_attributes[][warehouse_id]=1&product_locations_attributes[][quantity]=5&product_locations_attributes[][warehouse_id]=2&product_locations_attributes[][quantity]=4</pre>
+<pre>{"sku":"B0007P5KHG","name":"Toysmith Newton's Cradle Physics Science Kit","description":"\n        Newton's Cradle is a classic! Also known as balance balls,\n        these steel balls keep you entertained throughout the day. Pull back\n        one or more of the balls and let them drop down.\n      ","price":8.5,"product_locations_attributes":[{"warehouse_id":1,"quantity":5},{"warehouse_id":2,"quantity":4}]}</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/products&quot; -d &#39;sku=B0007P5KHG&amp;name=Toysmith+Newton%27s+Cradle+Physics+Science+Kit&amp;description=%0A++++++++Newton%27s+Cradle+is+a+classic%21+Also+known+as+balance+balls%2C+%0A++++++++these+steel+balls+keep+you+entertained+throughout+the+day.+Pull+back+%0A++++++++one+or+more+of+the+balls+and+let+them+drop+down.%0A++++++&amp;price=8.5&amp;product_locations_attributes[][warehouse_id]=1&amp;product_locations_attributes[][quantity]=5&amp;product_locations_attributes[][warehouse_id]=2&amp;product_locations_attributes[][quantity]=4&#39; -X POST \
-	-H &quot;Access-Token: qvL-ihbW4SYBBHs16G3jtw&quot; \
+<pre class="request">curl &quot;localhost:3000/api/v1/products&quot; -d &#39;{&quot;sku&quot;:&quot;B0007P5KHG&quot;,&quot;name&quot;:&quot;Toysmith Newton\u0027s Cradle Physics Science Kit&quot;,&quot;description&quot;:&quot;\n        Newton\u0027s Cradle is a classic! Also known as balance balls,\n        these steel balls keep you entertained throughout the day. Pull back\n        one or more of the balls and let them drop down.\n      &quot;,&quot;price&quot;:8.5,&quot;product_locations_attributes&quot;:[{&quot;warehouse_id&quot;:1,&quot;quantity&quot;:5},{&quot;warehouse_id&quot;:2,&quot;quantity&quot;:4}]}&#39; -X POST \
+	-H &quot;Accept: application/json&quot; \
+	-H &quot;Content-Type: application/json&quot; \
+	-H &quot;Access-Token: TjVkfpIHU1Uvc2j2wWEemQ&quot; \
 	-H &quot;Token-Type: Bearer&quot; \
-	-H &quot;Client: DZUGMoG6XATAl7jpSS8Hrg&quot; \
-	-H &quot;Expiry: 1447429725&quot; \
-	-H &quot;Uid: adele_maggio@grady.name&quot; \
-	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
+	-H &quot;Client: aMYOv2q-TeRDPYIpF41tMw&quot; \
+	-H &quot;Expiry: 1448113608&quot; \
+	-H &quot;Uid: geo@hahnhackett.info&quot;</pre>
 
 ### Response
 
@@ -59,17 +61,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: qvL-ihbW4SYBBHs16G3jtw
+access-token: TjVkfpIHU1Uvc2j2wWEemQ
 token-type: Bearer
-client: DZUGMoG6XATAl7jpSS8Hrg
-expiry: 1447429725
-uid: adele_maggio@grady.name
+client: aMYOv2q-TeRDPYIpF41tMw
+expiry: 1448113608
+uid: geo@hahnhackett.info
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;b2274d38fd8d6b59a935285ec8b80f65&quot;
+ETag: W/&quot;d7c3ea9e3f6349269bb0eefa32bba554&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 69e3c4dc-f097-43d8-bb4a-81a46ccfce74
-X-Runtime: 0.182146
-Content-Length: 501</pre>
+X-Request-Id: 81c5e594-5f56-41c1-8243-2980d571ccc3
+X-Runtime: 0.132055
+Content-Length: 496</pre>
 
 #### Status
 
@@ -80,12 +82,12 @@ Content-Length: 501</pre>
 <pre>{
   "sku": "B0007P5KHG",
   "name": "Toysmith Newton's Cradle Physics Science Kit",
-  "description": "\n        Newton's Cradle is a classic! Also known as balance balls, \n        these steel balls keep you entertained throughout the day. Pull back \n        one or more of the balls and let them drop down.\n      ",
+  "description": "\n        Newton's Cradle is a classic! Also known as balance balls,\n        these steel balls keep you entertained throughout the day. Pull back\n        one or more of the balls and let them drop down.\n      ",
   "price": "$8.50",
   "quantity": 9,
   "created_by": {
     "id": 1,
-    "email": "adele_maggio@grady.name"
+    "email": "geo@hahnhackett.info"
   },
   "product_locations": [
     {

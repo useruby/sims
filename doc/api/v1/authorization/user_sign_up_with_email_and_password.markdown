@@ -16,8 +16,9 @@ Description : user password
 
 #### Headers
 
-<pre>Host: example.org
-Content-Type: application/x-www-form-urlencoded
+<pre>Accept: application/json
+Content-Type: application/json
+Host: example.org
 Cookie: </pre>
 
 #### Route
@@ -26,12 +27,13 @@ Cookie: </pre>
 
 #### Body
 
-<pre>email=jarvis_nader%40douglasjakubowski.net&password=irlprn0i</pre>
+<pre>{"email":"reinhold_kutch@harvey.name","password":"hqn946p50"}</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;localhost:3000/api/v1/auth&quot; -d &#39;email=jarvis_nader%40douglasjakubowski.net&amp;password=irlprn0i&#39; -X POST \
-	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
+<pre class="request">curl &quot;localhost:3000/api/v1/auth&quot; -d &#39;{&quot;email&quot;:&quot;reinhold_kutch@harvey.name&quot;,&quot;password&quot;:&quot;hqn946p50&quot;}&#39; -X POST \
+	-H &quot;Accept: application/json&quot; \
+	-H &quot;Content-Type: application/json&quot;</pre>
 
 ### Response
 
@@ -40,17 +42,17 @@ Cookie: </pre>
 <pre>X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-access-token: QgKF7E8Ds5XK-fwMh3pXWQ
+access-token: X_2DaPfIrDgZBWBFV7A3Ow
 token-type: Bearer
-client: hlfDBdEl6305HQvQwtJFBA
-expiry: 1447429730
-uid: jarvis_nader@douglasjakubowski.net
+client: LVNRWNsL3bRT8Gc4ke2_Hg
+expiry: 1448113604
+uid: reinhold_kutch@harvey.name
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;982c19902b05706f399fd6af176bdbc5&quot;
+ETag: W/&quot;5a4b643c708dd35e05dfede1ee4edc09&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: baa70f21-4a7f-4686-bf7e-567c6331b391
-X-Runtime: 0.121336
-Content-Length: 237</pre>
+X-Request-Id: cd464d3a-61a9-4c45-a767-f1ddff6fa1c2
+X-Runtime: 0.122586
+Content-Length: 221</pre>
 
 #### Status
 
@@ -63,10 +65,10 @@ Content-Length: 237</pre>
   "data": {
     "id": 1,
     "provider": "email",
-    "uid": "jarvis_nader@douglasjakubowski.net",
-    "email": "jarvis_nader@douglasjakubowski.net",
-    "created_at": "2015-10-30T15:48:49.992Z",
-    "updated_at": "2015-10-30T15:48:50.101Z",
+    "uid": "reinhold_kutch@harvey.name",
+    "email": "reinhold_kutch@harvey.name",
+    "created_at": "2015-11-07T13:46:44.782Z",
+    "updated_at": "2015-11-07T13:46:44.891Z",
     "admin": false
   }
 }</pre>
