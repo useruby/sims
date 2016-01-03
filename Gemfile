@@ -5,14 +5,19 @@ gem 'rails-api'
 
 gem 'jbuilder'
 
-gem 'spring', group: :development
-
 gem 'sqlite3'
 
 gem 'devise_token_auth'
 gem 'cancancan', '~> 1.10'
 
 gem 'money-rails'
+
+group :development do
+  gem 'spring'
+  gem 'guard'
+  gem 'guard-ctags-bundler', github: 'useruby/guard-ctags-bundler'
+  gem 'ripper-tags'
+end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
