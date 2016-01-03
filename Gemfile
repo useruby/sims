@@ -17,6 +17,10 @@ group :development do
   gem 'guard'
   gem 'guard-ctags-bundler', github: 'useruby/guard-ctags-bundler'
   gem 'ripper-tags'
+  gem 'guard-bundler', require: false
+  gem 'guard-rubocop'
+  gem 'guard-rake'
+  gem 'libnotify'
 end
 
 group :development, :test do
