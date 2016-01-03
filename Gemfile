@@ -20,6 +20,7 @@ group :development do
   gem 'guard-bundler', require: false
   gem 'guard-rubocop'
   gem 'guard-rake'
+  gem 'guard-rspec', require: false
   gem 'libnotify'
 end
 

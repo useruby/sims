@@ -98,6 +98,10 @@ GEM
     guard-rake (1.0.0)
       guard
       rake
+    guard-rspec (4.6.4)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
     guard-rubocop (1.2.0)
       guard (~> 2.0)
       rubocop (~> 0.20)
@@ -260,6 +264,7 @@ DEPENDENCIES
   guard-bundler
   guard-ctags-bundler!
   guard-rake
+  guard-rspec
   guard-rubocop
   jbuilder
   libnotify
