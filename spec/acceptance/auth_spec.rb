@@ -5,7 +5,7 @@ resource 'Authorization' do
 
   header 'Accept', 'application/json'
   header 'Content-Type', 'application/json'
-  
+
   post '/api/v1/auth' do
     parameter :email, 'user email', required: true
     parameter :password, 'user password', required: true
